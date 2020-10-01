@@ -1,20 +1,25 @@
-*{
-    font-family:"Raleway", serif;
+* {
+    font-family: "Raleway", serif;
     padding: 0rem;
     margin: 0rem;
     text-align: justify;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #ffffff;
 }
 
-p{
+p {
     font-size: 1em;
     line-height: 1.5em;
 }
-/* Navbar */
+
+
+/*----------------------------------------------------------------------------------------------
+                                        NAVBAR
+------------------------------------------------------------------------------------------------*/
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -24,59 +29,155 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  
-  li {
+}
+
+li {
     float: left;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  
- 
-/*HEADER & FOOTER*/
-header, footer {
+}
+
+
+/*----------------------------------------------------------------------------------------------
+                                        HEADER & FOOTER
+------------------------------------------------------------------------------------------------*/
+
+header,
+footer {
     width: 100%;
     padding: 20px 0px;
     background: url("cv-cover.jpg") #392E5C;
-    
 }
 
-header{
+header {
     border-bottom: 2px solid #fff;
     height: 120px;
 }
- h1{
-    font-weight: bold;
-    color: black;
-    font-size: 1.5em;
+
+h1 {
+    font-family: "Crimson Text";
+    letter-spacing: 2px;
+    color: White;
+    padding-top: 1rem;
+    font-size: 1.8rem;
     text-align: center;
     margin: 0 auto;
 }
 
-footer{
+p {
+    font-family: "Raleway";
+}
+
+footer {
     border-top: 2px solid #fff;
 }
-footer p{
+
+footer p {
     width: 90%;
     margin: 0 auto;
     color: #fff;
     text-align: center;
 }
-footer a{
+
+footer a {
     color: #fff;
 }
 
 
-/*SECTIONS*/
-section{
-    display: flex; 
+/*----------------------------------------------------------------------------------------------
+                                        PARRALAX
+------------------------------------------------------------------------------------------------*/
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    opacity: 1;
+}
+
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6 {
+    opacity: 0.8;
+}
+
+.ptext {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.ptext .profession {
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.ptext img {
+    width: 13rem;
+    height: 13rem;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.pimg1 {
+    background-image: url('../img/Parrallax/parralax_img1.jpg');
+    min-height: 61rem;
+}
+
+.pimg2 {
+    background-image: url('../img/Parrallax/parralax_img2.jpg');
+    min-height: 30rem;
+}
+
+.pimg3 {
+    background-image: url('../img/Parrallax/parralax_img3.jpg');
+    min-height: 30rem;
+}
+
+.pimg4 {
+    background-image: url('../img/Parrallax/parralax_img4.jpg');
+    min-height: 30rem;
+}
+
+.pimg5 {
+    background-image: url('../img/Parrallax/parralax_img5.jpg');
+    min-height: 30rem;
+}
+
+.pimg6 {
+    background-image: url('../img/Parrallax/athletic-field-1867053__340.jpg');
+    min-height: 30rem;
+}
+
+
+/*----------------------------------------------------------------------------------------------
+                                        SECTION 
+------------------------------------------------------------------------------------------------*/
+
+section {
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
@@ -85,7 +186,7 @@ section{
     background-color: #fff;
 }
 
-section h2{
+section h2 {
     font-family: "Crimson Text";
     color: #392e5c;
     text-transform: uppercase;
@@ -93,117 +194,181 @@ section h2{
     margin: 20px 0;
     width: 100%;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
 }
-section > div{
+
+section>div {
     width: 90%;
 }
 
-/*SECTION INFOS*/
-.photo{
-    text-align: center;
-    margin-top: 9rem;
-}
-.photo img{
-    width: 150px;
-    height: 150px;
-    border: 3px solid #fff;
-    box-shadow: 0px 0px 10px #777;
-    border-radius: 50%;
-    margin-top: -80px;
-}
-.presentation{
+
+/*----------------------------------------------------------------------------------------------
+                                        SECTION INFOS
+------------------------------------------------------------------------------------------------*/
+
+.presentation {
     border-bottom: 2px dashed #ccc;
 }
-.presentation a{
+
+.presentation a {
     display: block;
     text-align: center;
     padding: 10px;
     margin: 10px auto 30px auto;
+    margin-top: 1rem;
     color: #fff;
     background-color: #392e5c;
     box-shadow: 0px 0px 10px #ccc;
     border-radius: 5px;
 }
-.contact-flex{
+
+.contact-flex {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
-.contact-flex p:first-child{
+
+.contact-flex p:first-child {
     flex: 0 0 40%;
 }
-.contact-flex p:last-child{
+
+.contact-flex p:last-child {
     flex: 0 0 60%;
 }
-.social{
+
+.social {
     display: flex;
     justify-content: space-evenly;
     margin: 10px auto 0px auto;
 }
-.social img{
+
+.social img {
     width: 40px;
     height: 40px;
 }
+.ptext img
+{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: all 0.5s ease;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.ptext img:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transform: scale(1.3) rotate(360deg);
+    transform: scale(1.3) rotate(360deg);
+}
+.ptext p h1{
+    opacity: 1;
+    -webkit-animation: flash 12s;
+    animation: flash 12s;
+}
+@-webkit-keyframes flash{
+    0%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes flash{
+    0%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+section div img{
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    margin-left: 0px;
+}
+section div img:hover{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    margin-left: -30px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
 
-/*SECTION EXP ET FORMATION*/
-.exp{
+/*----------------------------------------------------------------------------------------------
+                                        SECTION EXPERIENCE
+------------------------------------------------------------------------------------------------*/
+
+.exp {
     display: flex;
     flex-flow: row wrap;
     border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
-.exp-info{
+
+.exp-info {
     display: flex;
     flex-flow: column wrap;
 }
-.exp-logo{
+
+.exp-logo {
     flex: 0 0 25%;
     max-width: 100px;
 }
-.exp-info{
+
+.exp-info {
     flex: 0 0 70%;
     margin-left: auto;
 }
-.exp img{
+
+.exp img {
     width: 100%;
 }
-.exp h3{
-    font-size:  1.2rem;
+
+.exp h3 {
+    font-size: 1.2rem;
 }
-.exp h4{
-    font-size:  1rem;
+
+.exp h4 {
+    font-size: 1rem;
     font-weight: normal;
 }
 
-.marginh4{
+.marginh4 {
     margin-bottom: 0.8rem;
 }
 
-/*SECTION COMPETENCES*/
-.middle_h3{
+
+/*----------------------------------------------------------------------------------------------
+                                        SECTION COMPETENCES
+------------------------------------------------------------------------------------------------*/
+
+.middle_h3 {
     width: 90%;
     color: #392e5c;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.comp{
-    display:flex;
+.comp {
+    display: flex;
     flex-flow: column;
     margin-bottom: 10px;
 }
 
-.conteneur-barre{
+.conteneur-barre {
     flex: 0 0 30%;
     border-radius: 5px;
     height: 1.6rem;
     background-color: #e9ecef;
     border-bottom: 1px ridge grey;
 }
-.barre{
+
+.barre {
     display: block;
     height: 100%;
     text-align: center;
@@ -211,27 +376,28 @@ section > div{
     border-bottom-left-radius: 5px;
 }
 
-.c25{
+.c25 {
     width: 30%;
     color: white;
     font-weight: bold;
     background-color: #392E5C;
 }
 
-.c50{
+.c50 {
     width: 50%;
-    color: white;   
+    color: white;
     font-weight: bold;
     background-color: #392E5C;
 }
-.c75{
+
+.c75 {
     width: 75%;
     color: white;
     font-weight: bold;
     background-color: #392E5C;
 }
 
-.c100{
+.c100 {
     width: 100%;
     color: white;
     background-color: #392E5C;
@@ -240,74 +406,103 @@ section > div{
 }
 
 
+/*----------------------------------------------------------------------------------------------
+                                        SESSION INTERET
+------------------------------------------------------------------------------------------------*/
 
-
-/*SECTION INTERETS*/
-.interet{
+.interet {
     flex: 0 1 50%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     margin-bottom: 20px;
 }
-.interet img{
+
+.interet img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     box-shadow: 0px 0px 15px #555;
 }
 
-/*VERSION BUREAU DU CV*/
-@media screen and (min-width: 980px){
-    hr{
+
+/*----------------------------------------------------------------------------------------------
+                                VERSION MOBILE ET TABLETTE DU CV
+------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 980px) {
+    hr {
         flex: 0 0 30%;
+        height: 0.3rem;
+        margin-top: 3rem;
+        background-color: #392e5c;
     }
-    section{
-        width: 100%;
-        
-    }
-    a:hover{
-        color: #EA0;
-    }
-    header h1{
-        width: 80%;
-    }
-    .presentation{
-        flex: 0 0 75%;
-        
-    }
-    .contact{
-        flex: 0 0 40%;
-        
-    }
-    .presentation{
-        border-bottom: none;
-        padding-right: 20px;
-       
-    }
-    
-    .presentation a{
+    .presentation a {
+        width: 20rem;
         border: 2px solid transparent;
     }
-    .presentation a:hover{
+    a:hover {
+        background-color: #fff;
+        color: #392e5c;
+        transition: 0.5s;
+        font-weight: bold;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------
+                                    VERSION ORDINATEUR DU CV
+------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 980px) {
+    hr {
+        flex: 0 0 20%;
+        height: 0.3rem;
+        margin-top: 3rem;
+        background-color: #392e5c;
+    }
+    section {
+        width: 100%;
+    }
+    a:hover {
+        background-color: #fff;
+        color: #392e5c;
+        transition: 0.5s;
+        font-weight: bold;
+    }
+    .presentation {
+        flex: 0 0 90%;
+    }
+    .contact {
+        flex: 0 0 40%;
+    }
+    .presentation {
+        border-bottom: none;
+        padding-right: 20px;
+    }
+    .presentation a {
+        width: 24rem;
+        border: 2px solid transparent;
+    }
+    .presentation a:hover {
         transition: 1s;
         color: #392e5c;
         background-color: #fff;
         border: 2px solid #392e5c;
         box-shadow: 0px 0px 20px #666;
     }
-    .exp-logo{
+    .exp-logo {
         flex: 0 0 60%;
     }
-    .exp-info{
+    .exp-info {
         flex: 0 0 80%;
         margin-left: auto;
     }
-    .comp{
+    .comp {
         flex: 0 0 30%;
         padding-right: 1rem;
     }
-    .interet{
+    .interet {
         flex: 0 1 12%;
     }
 }
